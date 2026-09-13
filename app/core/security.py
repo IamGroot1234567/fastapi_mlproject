@@ -14,7 +14,6 @@ def create_token(data: dict, expire_minutes=30):
         settings.JWT_SECRET_KEY,
         algorithm=settings.JWT_ALGORITHM
     )
-
     return token
 
 
