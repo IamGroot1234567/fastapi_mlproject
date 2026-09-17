@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 10s
+
+
+scrape_config:
+  - job_name: 'fastapi-app'
+    static_configs:
+      - target: ['api:8000']
