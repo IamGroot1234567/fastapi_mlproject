@@ -2,7 +2,7 @@ from datetime import datetime, timedelta, timezone
 
 from jose import JWTError, jwt
 
-from config import settings
+from app.core.config import settings
 
 
 def create_token(data: dict, expire_minutes=30):
