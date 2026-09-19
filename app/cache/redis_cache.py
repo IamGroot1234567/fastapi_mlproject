@@ -13,4 +13,4 @@ def get_cached_prediction(key: str):
     return eval(value) if value else None
 
 def set_cached_prediction(key: str, value):
-    redis_client.set(key, str(value))
+    redis_client.setex(key,3600,str(value))
