@@ -1,0 +1,114 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 45px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.login-eyebrow {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.login-card h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 38px;
+  color: #222;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #777;
+  margin: 12px 0 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #888;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 25px;
+  color: #777;
+  font-size: 14px;
+}
+
+.register-text span {
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    padding: 80px 20px 20px;
+  }
+
+  .login-card {
+    padding: 30px 25px;
+  }
+}
+
+.login-message {
+  margin-top: 15px;
+  text-align: center;
+  color: #d32f2f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+

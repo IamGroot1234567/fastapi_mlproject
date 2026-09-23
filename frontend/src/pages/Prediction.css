@@ -1,0 +1,102 @@
+.prediction-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.prediction-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.prediction-eyebrow {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #777;
+}
+
+.prediction-card h1 {
+  text-align: center;
+  color: #222;
+}
+
+.prediction-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.prediction-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prediction-result {
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+.prediction-result p {
+  margin: 0 0 8px;
+  color: #777;
+  font-size: 14px;
+}
+
+.prediction-result h2 {
+  margin: 0;
+  color: #222;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .prediction-page {
+    padding: 80px 20px 30px;
+  }
+
+  .prediction-card {
+    padding: 30px 25px;
+  }
+}
+
+.prediction-message
+{ margin-top: 20px;
+text-align: center;
+color: #d32f2f;
+font-size: 14px;
+font-weight: 600; }

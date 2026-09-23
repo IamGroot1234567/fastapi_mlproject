@@ -12,3 +12,6 @@ numpy==1.26.4
 redis==5.0.4
 
 prometheus-fastapi-instrumentator==6.1.0
+
+sqlalchemy
+psycopg2-binary

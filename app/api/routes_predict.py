@@ -1,4 +1,5 @@
-from app.core.dependencies import get_api_key, get_current_user
+from app.core.dependencies import get_current_user
+from app.schemas import PredictionResponse
 from app.services.model_service import predict_car_price
 from fastapi import APIRouter, Depends
 from pydantic import BaseModel
@@ -21,7 +22,9 @@ class CarFeatures(BaseModel):
     seats: float
 
 
-@router.post('/predict')
-def predict_price(car: CarFeatures, user=Depends(get_current_user), api_key=Depends(get_api_key)):
+@router.post('/predict', response_model=PredictionResponse)
+def predict_price(car: CarFeatures, user=Depends(get_current_user)):
     prediction = predict_car_price(car.model_dump())
-    return {'predicted_price': f'{prediction:.2f}'}
+    return {
+        'predicted_price': round(float(prediction), 2)
+    }

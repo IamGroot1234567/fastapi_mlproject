@@ -1,10 +1,20 @@
 from datetime import datetime, timedelta, timezone
 from uuid import uuid4
 
+from pwdlib import PasswordHash
+
 from jose import JWTError, jwt
 
 from app.core.config import settings
 from app.cache.redis_cache import redis_client
+
+password_hash = PasswordHash.recommended()
+
+def hash_password(password: str):
+    return password_hash.hash(password)
+
+def verify_password(password: str, hashed_password: str):
+    return password_hash.verify(password, hashed_password)
 
 def create_token(data: dict, expiry_minutes=30):
     to_encode=data.copy()

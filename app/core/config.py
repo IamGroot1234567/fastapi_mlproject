@@ -12,6 +12,7 @@ class Settings:
     JWT_ALGORITHM = 'HS256'
     REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379')
     MODEL_PATH = 'app/models/model.joblib'
+    DATABASE_URL = os.getenv('DATABASE_URL')
 
 
 settings = Settings()

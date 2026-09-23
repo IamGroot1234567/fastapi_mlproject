@@ -1,0 +1,151 @@
+.home {
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Soft overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Main content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 40px;
+  text-align: center;
+  color: #0b1f33;
+}
+
+/* Small heading */
+.eyebrow {
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  color: #0b1f33;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* Main name */
+.hero-content h1 {
+  font-size: 72px;
+  line-height: 1;
+  margin: 0;
+  font-weight: 700;
+  color: #071a2b;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.65);
+}
+
+/* Manjunath */
+.hero-content h1 span {
+  display: block;
+  font-size: 32px;
+  margin-top: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #12324a;
+  text-shadow: 0 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Life is a journey quote */
+.quote {
+  max-width: 700px;
+  margin: 28px auto 10px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 600;
+  color: #071a2b;
+  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.95);
+}
+
+/* Travel • Adventure • Exploration */
+.journey-theme {
+  margin-top: 30px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #173f35;
+  text-transform: uppercase;
+  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.95);
+}
+
+/* Come along... */
+.intro {
+  max-width: 650px;
+  margin: 18px auto 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #d4a017;
+  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.95);
+}
+
+/* Enter Application button */
+.enter-button {
+  border: none;
+  padding: 15px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: #0b1f33;
+  color: white;
+
+  box-shadow: 0 8px 25px rgba(7, 26, 43, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.enter-button:hover {
+  transform: translateY(-3px);
+  background: #12324a;
+  box-shadow: 0 12px 30px rgba(7, 26, 43, 0.35);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content h1 span {
+    font-size: 24px;
+  }
+
+  .quote {
+    font-size: 19px;
+  }
+
+  .journey-theme {
+    font-size: 14px;
+    letter-spacing: 2.5px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+}

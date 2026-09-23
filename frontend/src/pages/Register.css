@@ -1,0 +1,138 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  padding: 20px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 45px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.register-eyebrow {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.register-card h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 38px;
+  color: #222;
+}
+
+.register-subtitle {
+  text-align: center;
+  color: #777;
+  margin: 12px 0 30px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #888;
+}
+
+.register-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 25px;
+  color: #777;
+  font-size: 14px;
+}
+
+.login-text span {
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .register-page {
+    padding: 80px 20px 20px;
+  }
+
+  .register-card {
+    padding: 30px 25px;
+  }
+}
+
+.register-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-message.success {
+  color: #2e7d32;
+}
+
+.register-message.error {
+  color: #d32f2f;
+}
+
+.login-after-register-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.login-after-register-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}

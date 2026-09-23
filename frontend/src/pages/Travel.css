@@ -1,0 +1,60 @@
+.travel-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 40px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+}
+
+.travel-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 45px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.travel-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #777;
+}
+
+.travel-card h1 {
+  margin: 0 0 20px;
+  color: #222;
+}
+
+.travel-text {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.travel-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.travel-contact a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.travel-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .travel-card {
+    padding: 30px 25px;
+  }
+}
