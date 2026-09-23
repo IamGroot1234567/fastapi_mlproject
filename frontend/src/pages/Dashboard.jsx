@@ -16,7 +16,7 @@ function Dashboard() {
       <LogoutButton />
 
       <div className="dashboard-card">
-        <p className="dashboard-eyebrow">WELCOME</p>
+        <p className="dashboard-eyebrow">💐 WELCOME 💐</p>
 
         <h1>{username}</h1>
 
