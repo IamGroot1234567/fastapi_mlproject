@@ -6,6 +6,10 @@ import './Dashboard.css'
 function Dashboard() {
   const navigate = useNavigate()
 
+  const token = localStorage.getItem('access_token')
+  const payload = JSON.parse(atob(token.split('.')[1]))
+  const username = payload.sub
+
   return (
     <main className="dashboard-page">
       <HomeButton />
@@ -14,10 +18,10 @@ function Dashboard() {
       <div className="dashboard-card">
         <p className="dashboard-eyebrow">WELCOME</p>
 
-        <h1>Arudh Arjun</h1>
+        <h1>{username}</h1>
 
         <p className="dashboard-subtitle">
-          Explore, predict, connect.
+          Explore 🗺️, Predict 🚗, Connect 🤝
         </p>
 
         <div className="dashboard-options">

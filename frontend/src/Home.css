@@ -42,8 +42,8 @@
   line-height: 1;
   margin: 0;
   font-weight: 700;
-  color: #071a2b;
-  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.65);
+  color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
 }
 
 /* Manjunath */
@@ -65,8 +65,8 @@
   line-height: 1.5;
   font-style: italic;
   font-weight: 600;
-  color: #071a2b;
-  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.95);
+  color: #F3F7FA;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
 }
 
 /* Travel • Adventure • Exploration */
@@ -75,9 +75,9 @@
   font-size: 18px;
   letter-spacing: 4px;
   font-weight: 700;
-  color: #173f35;
+  color: #FF00FF;
   text-transform: uppercase;
-  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
 }
 
 /* Come along... */
@@ -87,7 +87,7 @@
   font-size: 18px;
   line-height: 1.7;
   font-weight: 500;
-  color: #d4a017;
+  color: #000000;
   text-shadow: 0 1px 6px rgba(255, 255, 255, 0.95);
 }
 
