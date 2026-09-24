@@ -13,7 +13,7 @@ function About() {
       <div className="about-card">
         <p className="about-eyebrow">ABOUT ME</p>
 
-        <h1>Arudh Arjun</h1>
+        <h1>Arjun(Manjunath)</h1>
 
         <p className="about-quote">
           "Why so serious? Life is meant to be explored."
