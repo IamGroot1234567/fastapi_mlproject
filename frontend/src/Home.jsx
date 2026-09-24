@@ -16,7 +16,7 @@ function Home() {
         <p className="eyebrow">WELCOME TO MY JOURNEY</p>
 
         <h1>
-          Arudh Arjun
+          Arjun
           <span>(Manjunath)</span>
         </h1>
 
