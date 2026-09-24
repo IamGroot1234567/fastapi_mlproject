@@ -126,6 +126,10 @@ function Register() {
                   setUsername(event.target.value)
                 }
               />
+
+              <p className="input-hint">
+                3–20 characters • Letters, numbers and _ only
+              </p>
             </div>
 
             <div className="form-group">
@@ -165,6 +169,10 @@ function Register() {
                   setPassword(event.target.value)
                 }
               />
+
+              <p className="input-hint">
+                At least 7 characters • 1 number • 1 special character
+              </p>
             </div>
 
             <button
