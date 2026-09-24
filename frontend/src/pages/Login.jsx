@@ -49,7 +49,6 @@ function Login() {
       <HomeButton />
 
       <div className="login-card">
-        <p className="login-eyebrow">CAR PRICE PREDICTION</p>
 
         <h1>Welcome Back</h1>
 
